@@ -1,0 +1,378 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+a,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.all-project {
+  border-style: solid;
+  padding: 2px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 3px;
+  border-radius: 10px;
+  /* Adjust the border-radius value */
+  border: 1px solid #0056b3;
+  /* Set the border size */
+  display: inline-block;
+  /* Ensure the border only wraps the content */
+  padding: 5px;
+  /* Add padding for spacing */
+}
+
+
+.job {
+  color: rebeccapurple;
+}
+
+/* Apply a basic style to the body */
+/* WEB-01: Page content */
+body {
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: 'Your Chosen Font', sans-serif;
+  /* Change 'Your Chosen Font' to the actual font you want to use */
+  font-size: 16px;
+  /* Adjust the default font size as needed */
+  color: #333;
+  /* Adjust the default font color as needed */
+
+}
+
+.icon-intro img {
+  width: 20px;
+
+  height: 20px;
+}
+
+.icon {
+  padding-top: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-contact img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  /* Add smooth transition */
+}
+
+.icon-contact img:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-3px);
+  }
+
+  100% {
+    transform: translateX(3px);
+  }
+}
+
+
+/* Style for Photo Section */
+#photo {
+  flex: 2;
+  /* Take double width in a single column */
+  position: relative;
+  /* Set position to relative to position the background */
+
+}
+
+
+section {
+
+  border-radius: 12px;
+  box-shadow:
+    inset 0 -3em 3em rgba(200, 183, 0, 0.13),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgba(200, 0, 0, 0.6);
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin: 20px 0;
+
+}
+
+.progress-bar1,
+.progress-bar2,
+.progress-bar3 {
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  display: inline-block;
+}
+
+.progress-bar1 {
+  width: 90%;
+  background-color: #4caf50;
+}
+
+.progress-bar2 {
+  width: 80%;
+  background-color: #4caf50;
+}
+
+.progress-bar3 {
+  width: 60%;
+  background-color: #4caf50;
+}
+
+
+/* Additional styles for the image */
+#photo img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+/* WEB-02: Photo hover effect */
+#photo img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow on hover */
+}
+
+/* WEB-03: Photo click */
+#photo img:active {
+  border: 2px solid #333;
+  /* Add a border on click */
+}
+
+
+
+/* WEB-05: Work experiences list */
+#work-experience ul {
+  list-style-type: none;
+}
+
+#work-experience ul li {
+  margin-bottom: 20px;
+}
+
+
+
+#footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* WEB-08: Layout, interactive elements, look & feel */
+a {
+  color: #007bff;
+  /* Change link color */
+  text-decoration: none;
+  transition: color 0.3s;
+  /* Add smooth color transition */
+}
+
+a:hover {
+  color: #0056b3;
+  /* Change link color on hover */
+  /* Add animations or hover effects as desired for an interactive feel */
+}
+
+/* WEB-09: Language */
+/* You should add styles specific to Dutch or English language if needed */
+
+/* WEB-10: Uniformity */
+body,
+h1,
+
+h3,
+p,
+ul,
+a,
+button {
+  font-family: 'Your Chosen Font', sans-serif;
+  /* Change 'Your Chosen Font' to the actual font you want to use */
+  font-size: 16px;
+  /* Adjust the default font size as needed */
+  color: #333;
+  /* Adjust the default font color as needed */
+}
+
+/* Style the header */
+header {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the photo section */
+#photo {
+  background-image: url('images/5594016.jpg');
+  text-align: center;
+  
+
+}
+
+#photo img {
+  border-radius: 50%;
+  max-width: 100%;
+  /* Ensure the image doesn't exceed its container */
+}
+
+/* Style the diplomas section */
+#diplomas,
+#skills,
+#language-skills,
+#work-experience {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Style the footer */
+footer {
+  background-color: #007bff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /* Set the right property to 0 for it to be on the right side */
+  width: 10px;
+  border-radius: 12px;
+  margin: 0 30px 50px 0;
+
+}
+
+
+/* WEB-07: Back upstairs knob */
+#scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-style: none;
+}
+
+/* Apply styles for screens with width <= 480px (Mobile devices) */
+@media screen and (max-width: 480px) {
+  header {
+    font-size: 18px;
+  }
+
+  #photo img {
+    width: 100%;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  #diplomas,
+  #skills,
+  #language-skills,
+  #work-experience {
+    padding: 10px;
+
+  }
+
+  a,
+  button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  h2,
+  h3,
+  p {
+    margin-bottom: 10px;
+  }
+
+  /* WEB-16: Table in mobile view */
+  table {
+    display: none;
+  }
+
+  #work-experience ul li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  #work-experience ul li h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  #work-experience ul li p {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+}
+
+/* Additional requirements for responsiveness */
+/* WEB-14: Responsiveness */
+@media screen and (max-width: 768px) {
+
+  /* Adjust styles for screens larger than 480px and up to 768px */
+  #diplomas,
+  #skills,
+  #language-skills,
+  #work-experience {
+    padding: 20px;
+  }
+}
+
+/* WEB-15: External links */
+#photo a {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Additional styles for larger screens (min-width: 481px) */
+@media screen and (min-width: 481px) {
+
+  /* WEB-17: Table on larger screens */
+  table {
+    display: table;
+  }
+
+  /* Hide the table information in larger screens */
+  #work-experience ul {
+    display: block;
+  }
+}
